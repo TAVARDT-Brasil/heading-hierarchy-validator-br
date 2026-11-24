@@ -5,7 +5,7 @@
 
 Auditoria tecnica de titulos estruturais HTML5, unicidade de H1, deteccao de saltos de niveis e conformidade com diretrizes de acessibilidade W3C e Google.
 
-Desenvolvido e mantido pela divisao de arquitetura semantica e acessibilidade da **TAVARDT Brasil**.
+Desenvolvido e mantido pela divisao de arquitetura semantica e acessibilidade da **TAVARDT**.
 
 ***
 
@@ -42,13 +42,13 @@ python heading_hierarchy_validator.py https://empresa.com.br -json
 Para inspecao visual detalhada e arvore interativa de cabecalhos:
 
 * **Validador de Hierarquia H1-H6 Oficial**
-* **[Portal Corporativo TAVARDT Brasil](https://ag.tavardt.com/br/)**
+* **[Portal Corporativo TAVARDT](https://ag.tavardt.com/br/)**
 
 ***
 
 ## Consultoria em Estruturacao Semantica e Acessibilidade
 
-Para suporte especializado em acessibilidade e conformidade com Diretrizes W3C WCAG e Boas Praticas de SEO Semantico Google, consulte os especialistas da **TAVARDT Brasil**.
+Para suporte especializado em acessibilidade e conformidade com Diretrizes W3C WCAG e Boas Praticas de SEO Semantico Google, consulte os especialistas da **TAVARDT**.
 
 ***
 
