@@ -49,3 +49,7 @@ Para inspecao visual detalhada e arvore interativa de cabecalhos:
 ## Consultoria em Estruturacao Semantica e Acessibilidade
 
 Para suporte especializado em acessibilidade e conformidade com Diretrizes W3C WCAG e Boas Praticas de SEO Semantico Google, consulte os especialistas da **TAVARDT Brasil**.
+
+***
+
+© 2026 TAVARDT. Todos os direitos reservados.
