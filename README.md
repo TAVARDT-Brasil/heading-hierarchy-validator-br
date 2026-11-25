@@ -4,23 +4,33 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Auditoria tecnica de titulos estruturais HTML5, unicidade de H1, deteccao de saltos de niveis e conformidade com diretrizes de acessibilidade W3C e Google.
+Auditoria de tags de cabecalho HTML5 (H1-H6), unicidade de H1, deteccao de saltos de niveis e validacao da arvore semantica.
 
 ***
 
-## Capacidades de Auditoria de Cabecalhos H1-H6
+## Vetores de Risco e Impacto Operacional na Hierarquia de Titulos
 
-* **Inspecao de Unicidade de H1**: Verificacao da presenca de exatamente uma tag `<h1>` principal como ancora semantica do documento.
-* **Deteccao de Saltos de Nivel (Level Skips)**: Identificacao de quebras de sequencia logica (como passar de `<h2>` diretamente para `<h4>` sem `<h3>`), prejudiciais a navegacao assistiva.
-* **Auditoria de Textos de Cabecalho Vazios ou Excessivos**: Identificacao de tags de titulo sem conteudo de texto ou com extensao inadequada.
-* **Mapeamento Visual da Arvore Semantica**: Exibicao hierarquica indentada da estrutura de secoes e topicos do conteudo.
-* **Indice de Coerencia Semantica**: Pontuacao tecnica de 0 a 100 com alertas priorizados de conformidade W3C WCAG e SEO.
+A ausencia ou multiplicidade de tags H1 fragmenta a compreensao tematica pelos robos de busca no Brasil, enfraquecendo o ranqueamento. A desorganizacao dos cabecalhos confunde tecnologias assistivas e dificulta a leitura estruturada por leitores de tela.
+
+Pular niveis hierarquicos na sequencia do documento viola diretamente os padroes internacionais de acessibilidade W3C WCAG. Cabecalhos vazios criam marcadores fantasmas que prejudicam os indices tecnicos de auditoria semantica.
+
+***
+
+## Capacidades Centrais de Auditoria Tecnica
+
+* **Verificacao de Tag H1 Principal**: Fiscaliza presenca e unicidade do titulo H1, deduzindo 40 pontos para ausencia e 15 pontos para declaracoes multiplas.
+* **Deteccao de Saltos Hierarquicos**: Rastreia a progressao das tags identificando saltos que ultrapassem um nivel, com penalidade de ate 30 pontos.
+* **Identificacao de Cabecalhos Vazios**: Mapeia tags de titulo desprovidas de texto interno, aplicando penalidade de ate 20 pontos.
+* **Construcao da Arvore Estrutural**: Mapeia a hierarquia completa de H1 a H6 gerando a distribuicao quantitativa por nivel.
+* **Pontuacao de Qualidade Semantica**: Computa uma nota tecnica de 0 a 100 categorizada em SATISFACTORY, ADVISORY ou UNSATISFACTORY.
+* **Garantia de Acessibilidade Digital**: Valida marcos estruturais para conformidade com normas globais de inclusao digital.
+* **Exportacao Automatizada em JSON**: Suporte a relatorios estruturados via flag curta para integracao direta em esteiras de CI/CD.
 
 ***
 
 ## Instalacao e Execucao
 
-Requer Python 3.8 ou superior sem necessidade de bibliotecas adicionais.
+Requer Python 3.8 ou superior utilizando exclusivamente bibliotecas padrao.
 
 ```bash
 git clone https://github.com/TAVARDT-Brasil/heading-hierarchy-validator-br.git
@@ -28,30 +38,49 @@ cd heading-hierarchy-validator-br
 python heading_hierarchy_validator.py https://empresa.com.br
 ```
 
-Para gerar relatorio estruturado em formato JSON:
+Para gerar a saida em formato estruturado JSON em esteiras de integracao continua:
 
 ```bash
-python heading_hierarchy_validator.py https://empresa.com.br -json
+python heading_hierarchy_validator.py https://empresa.com.br -j
 ```
 
 ***
 
-## Consultoria em Estruturacao Semantica e Acessibilidade
+## Perguntas Frequentes (FAQ Tecnico)
 
-Para suporte especializado em acessibilidade e conformidade com Diretrizes W3C WCAG e Boas Praticas de SEO Semantico Google, consulte os especialistas da **TAVARDT**.
+### 1. Como a ausencia ou multiplicidade de tags H1 prejudica o posicionamento organico?
+Os buscadores dependem da tag H1 como ancora semantica principal para compreender o assunto central do documento. A ausencia do H1 torna o contexto ambiguo, enquanto multiplas declaracoes diluem a forca das palavras-chave primarias.
+
+### 2. Por que pular niveis de cabecalho como saltar de H1 direto para H3 viola a acessibilidade?
+Os leitores de tela utilizam os cabecalhos para sintetizar um indice auditivo de navegacao para pessoas com deficiencia visual. Pular niveis desorienta a ordem logica de assimilacao e representa desconformidade com as diretrizes W3C WCAG.
+
+### 3. Quais os riscos tecnicos de manter tags de cabecalho vazias no codigo HTML?
+Titulos sem texto geram marcos fantasmas que confundem ferramentas assistivas e depreciam a nota de auditoria semantica. Os algoritmos de busca interpretam elementos vazios como falhas de desenvolvimento e reduzem a avaliacao tecnica da pagina.
+
+### 4. Como uma estrutura de cabecalhos clara favorece a resposta de motores de IA?
+Modelos de linguagem e sistemas de busca com IA analisam o documento em blocos hierarquicos para resumir conteudos e extrair respostas. Uma transicao logica de titulos permite identificar exatamente a secao de interesse e gerar citacoes precisas.
+
+### 5. Qual a melhor pratica recomendada para ordenar secoes em paginas complexas?
+Cada pagina deve possuir um unico H1 tematico, seguido por secoes demarcadas por H2 para cada topico principal. Subtopicos devem utilizar tags H3 e H4 sequencialmente, sem pular degraus, mantendo a coesao estrutural do conteudo.
 
 ***
 
-## Links Úteis
+## Consultoria em Arquitetura Semantica e Acessibilidade
+
+Para projetos de grande porte e alinhamento com as diretrizes do W3C WCAG e do Google, consulte a equipe da **TAVARDT**.
+
+***
+
+## Links Uteis
 
 * **Portal Corporativo:** https://ag.tavardt.com/br/
-* **Suíte de Diagnósticos:** https://tools.tavardt.com/br/
-* **Contato Técnico:** https://ag.tavardt.com/br/contato/
+* **Suite de Diagnosticos:** https://tools.tavardt.com/br/
+* **Contato Tecnico:** https://ag.tavardt.com/br/contato/
 
 ***
 
-### Licença
-Distribuído sob a Licença MIT.
+### Licenca
+Distribuido sob a Licenca MIT. Consulte o arquivo LICENSE para termos completos.
 
 ***
 
