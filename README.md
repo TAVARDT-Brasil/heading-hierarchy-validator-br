@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://ag.tavardt.com/br/">
+    <img src="https://ag.tavardt.com/img/tavardt-banner.png" alt="TAVARDT" width="1024" />
+  </a>
+</p>
+
 # Validador de Hierarquia de Cabecalhos H1-H6 e Estrutura Semantica
 
 [![Validador Hierarquia H1-H6](https://img.shields.io/badge/TAVARDT-Heading%20Hierarchy-5b3cf5.svg)](https://tools.tavardt.com/br/validador-hierarquia-h1-h6/)
